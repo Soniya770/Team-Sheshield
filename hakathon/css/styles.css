@@ -1,0 +1,122 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #fff; /* Light pink background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Profile Card Container */
+  .profile-card {
+    background: #ffffff;
+    width: 360px;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80px; /* for nav spacing */
+  }
+  
+  /* Profile Image */
+  .profile-header{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 20px;
+  }
+  .profile-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 30%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #10a406;
+    
+  }
+  
+  /* Title */
+  .profile-card h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #10a406;
+  }
+  
+   
+  /* Personal Details */
+  .details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #3cdb61;
+    font-size: 14px;
+  }
+  
+  .details label {
+    font-weight: 600;
+    color: #444;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #10a406;
+  }
+  
+  /* Emergency List */
+  .emergency-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  
+  .emergency-list li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #3cdb61;
+  }
+  
+  /* Bottom Navigation */
+  .bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #3cdb61;
+  }
+  
+  .nav-item {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .nav-item i {
+    font-size: 20px;
+  }
+  
+  .nav-item.active {
+    color: #10a406;
+  }
+  
